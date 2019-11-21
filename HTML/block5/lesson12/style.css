@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    width: 200px;
+    height: 40px;
+    padding: 20px;
+    border: 1px solid black;
+    /*word-wrap: break-word;*/
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    -webkit-hyphens: manual;
+}

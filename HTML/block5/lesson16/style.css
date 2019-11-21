@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+.block1 {
+    transform: scale(1.25);
+    background-color: red;
+}
+
+.block2 {
+    transform: translate(100px, 0);
+    background-color: blue;
+}
+
+.block3 {
+    transform: rotate(45deg);
+    background-color: green;
+}
+
+.block4 {
+    transform: skewX(-147deg) skewY(196deg);
+    background-color: coral;
+}
+
+
+

@@ -1,0 +1,27 @@
+body {
+    background-image: url("images/bg.png");
+}
+
+p {
+    color: darkred;
+}
+
+.blue {
+    color: blue;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.lesson4 {
+    text-align: center;
+    text-decoration: line-through;
+    color: blue;
+    font-family: Tahoma;
+    line-height: 1.7;
+}
+
+.lesson5 {
+    background-color: darkgoldenrod;
+}

@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.radial {
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    border: 1px solid black;
+    background: radial-gradient(red, blue);
+}
+
+.radial2 {
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    border: 1px solid black;
+    background: radial-gradient(red, blue, blue 30%, red 70%);
+}
+

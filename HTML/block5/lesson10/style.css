@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url("Lobster-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.google {
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+.font-face {
+    font-family: Lobster;
+}

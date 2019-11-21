@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.vertical {
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, red, blue);
+}
+
+.horisontal {
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    border: 1px solid black;
+    background: linear-gradient(to left, red, blue);
+}
+
+.diagonal {
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    border: 1px solid black;
+    background: linear-gradient(to top left, red, blue);
+}
+
+
+.multicolor {
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    border: 1px solid black;
+    background: linear-gradient(red, blue, green);
+}

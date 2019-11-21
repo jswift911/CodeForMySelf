@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+[class^='block-'] {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 3px solid black;
+}
+
+.block-1 {
+    background-color: blue;
+    transform: rotate3d(-96, 41, 33, 53deg);
+}
+
+.block-2 {
+    background-color: red;
+    transform: translate3d(116px, 7px, 18px);
+}
+
+.block-3 {
+    background-color: green;
+    transform: scale3d(1.2, 1.2, 1.2);
+}

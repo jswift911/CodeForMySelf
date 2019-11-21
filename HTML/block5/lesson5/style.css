@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+button {
+    margin: 60px;
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    box-shadow: 10px 11px 5px 0 rgba(0,0,0,0.75);
+}
+
