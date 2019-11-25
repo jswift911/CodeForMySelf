@@ -19,4 +19,3 @@ console.log(daysObj['0']);
 let date = new Date();
 let day = date.getDay();
 console.log(daysObj[day]);
-

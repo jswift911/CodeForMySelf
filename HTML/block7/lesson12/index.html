@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 12 по JavaScipt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="popup__overlay" id="popup_overlay">
+    <div class="popup">
+        <div class="popup__close" id="popup_close">Закрыть</div>
+        <p>Оставьте ваш телефон <br> и наш консультант свяжется с вами</p>
+        <form id="backPhone" name="backPhone">
+            <input type="tel" name="telephone" id="telForm" placeholder="Оставьте ваш телефон">
+            <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <h1 id="changed">Заголовок</h1>
+    <button id="popupIn">Показать popup</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
