@@ -64,9 +64,9 @@ window.onload = function () {
         };
 
         if (h1.style.color == 'black') {
-            h1.style.color == 'red';
+            h1.style.color = 'red';
         } else {
-            h1.style.color == 'black';
+            h1.style.color = 'black';
         }
     }
 
