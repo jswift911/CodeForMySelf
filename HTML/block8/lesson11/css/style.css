@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.block {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.removeDiv {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}

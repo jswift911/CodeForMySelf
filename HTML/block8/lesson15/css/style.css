@@ -1,0 +1,47 @@
+body {
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrap {
+    width: 390px;
+    height: 390px;
+    margin: 50px auto;
+    padding: 0;
+    display: block;
+}
+
+.row {
+    display: block;
+    height: 120px;
+}
+
+.cell {
+    float: left;
+    display: block;
+    background-color: #605c57;
+    width: 120px;
+    height: 100%;
+    border: 5px solid white;
+}
+
+.cell:hover {
+    background-color: #bab7b4;
+}
+
+.cell-x, .cell-o {
+    background-image: url('steps.png');
+}
+
+.offset-x {
+    background-position-x: 0;
+    background-position-y: center;
+}
+
+.offset-o {
+    background-position-x: -120px;
+    background-position-y: center;
+}
