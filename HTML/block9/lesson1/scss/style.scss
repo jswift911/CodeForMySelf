@@ -1,0 +1,89 @@
+@import "variables";
+@import "test";
+@import "mixins";
+@import "functions";
+
+body {
+  background-color: $bg-color;
+}
+
+p {
+  letter-spacing: ls-to-css(100);
+  letter-spacing: ls-to-css(200, 25px, px);
+}
+
+//$values: 25px, 30px, #fff;
+$values: (color: #000, fs: 20px, lh: 24px);
+
+@include paragraphs($values...) {
+  b {
+    color: yellow;
+  }
+
+  i {
+    color: aqua;
+  }
+};
+
+.btn {
+  @include button(#ff0, #000, $border: true);
+}
+
+.block {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.block2 {
+  $bg-color-block: green;
+  width: 200px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: $bg-color-block;
+
+  h2 {
+    font-size: $big-text;
+  }
+
+}
+
+%for-block3 {
+  position: relative;
+
+  &::after {
+    content: "";
+    right: -2px;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: $bg-color;
+    border-radius: 0 0 0 20px;
+  }
+
+  &::before {
+    content: "";
+    left: -2px;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: $bg-color;
+    border-radius: 0 0 20px 0;
+  }
+}
+
+.block3 {
+  @extend .block2;
+  @extend %for-block3;
+  width: 300px;
+  background-color: $bg-color-block;
+
+  h2 {
+    font-size: $small-text;
+  }
+}
+

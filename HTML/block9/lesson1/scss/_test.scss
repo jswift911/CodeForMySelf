@@ -1,0 +1,33 @@
+@for $i from 1 through 5 {
+  .image__#{$i} {
+    background: url("img/image-#{$i}.png");
+  }
+}
+
+$floats: (left, right, none);
+
+@each $float in $floats {
+  .float--#{$float} {
+    float: #{$float};
+  }
+}
+
+$colors: (white: white, black: black, red: red, blue: blue, green: green);
+
+@each $name, $value in $colors {
+
+  .color--#{$name} {
+    color: #{$value}
+  }
+
+}
+
+$i: 1;
+
+@while ($i <= 5) {
+  .block-#{$i} {
+    width: $i * 100px;
+  }
+
+  $i: $i + 1;
+}

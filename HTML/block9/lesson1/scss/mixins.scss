@@ -1,0 +1,56 @@
+@mixin paragraphs($fs: 18px, $lh: 20px, $color: black) {
+  p {
+    font-size: $fs;
+    line-height: $lh;
+    color: $color;
+    font-style: italic;
+
+    @include link-style;
+
+    span {
+      font-weight: bold;
+    }
+
+    @content;
+  }
+}
+
+@mixin link-style {
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: darkblue;
+    border-bottom: 1px solid red;
+  }
+
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+@mixin button($bg-and-border-color: #f00, $font-color: #fff, $border: false) {
+  width: 220px;
+  box-sizing: border-box;
+  color: $font-color;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+
+  @if $border == true {
+    border: 2px solid $bg-and-border-color;
+  } @else if $border == false {
+    background-color: $bg-and-border-color;
+  }
+
+  &:hover {
+    background-color: lighten($bg-and-border-color, 10%);
+
+    @if ($border == true) {
+      border-color: darken($bg-and-border-color, 10%);
+    }
+  }
+}
