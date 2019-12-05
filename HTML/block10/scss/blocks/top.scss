@@ -1,0 +1,47 @@
+.top {
+  border-bottom: 6px solid $border-color;
+  padding: 30px 0;
+
+  .top__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .top__menu {
+    flex-basis: 58%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .top {
+
+    .top__left {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .top__menu {
+      flex-basis: 80%;
+    }
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  .top {
+    .top__menu {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+    }
+
+    .top__right {
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  }
+}

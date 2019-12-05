@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/top";
+@import "blocks/menu";
+@import "blocks/icons";
+@import "blocks/slider";
+@import "blocks/content";
+@import "blocks/categories";
+@import "blocks/offers";
+@import "blocks/banner";
+@import "blocks/products";
+@import "blocks/featured";
