@@ -1,0 +1,142 @@
+.header {
+  height: 860px;
+  background-color: $bg-color;
+  color: $black;
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .burger {
+    width: 19px;
+    height: 16px;
+    font-size: 22px;
+    color: $black;
+
+    &:hover {
+      color: crimson;
+    }
+  }
+
+  .logo {
+    flex-basis: 17%;
+    padding-left: 4%;
+  }
+
+  .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .logo__title {
+    margin-left: 10px;
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 700;
+    color: $black;
+  }
+
+  .social__block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 12%;
+
+    .social__element {
+      margin-left: 16px;
+      font-size: 21px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      & a:hover {
+        color: crimson;
+      }
+    }
+
+    .social__element a {
+      color: $black;
+    }
+  }
+
+  .header__info {
+    max-width: 536px;
+    display: flex;
+    height: 693px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 48px;
+      line-height: 1;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      max-width: 536px;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 400;
+      padding-top: 22px;
+      padding-bottom: 41px;
+      text-align: center;
+    }
+
+    .header__btn {
+      $values: (fs: 22px, lh: 24px, ls: 0.6px, w: 256px, br: 0, bg: transparent, clr: $btn-color);
+      @include btn($values...) {
+        border: 2px solid $dark-black;
+        padding: 18px 0;
+        font-weight: 700;
+        text-transform: uppercase;
+      };
+    }
+  }
+
+  .header__wrap {
+    .arrow {
+      display: flex;
+      justify-content: center;
+      a {
+        font-size: 40px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+          color: crimson;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  .header__wrap {
+    .arrow {
+      margin: -40px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .social__block {
+      margin-top: 15px;
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  }
+}
