@@ -1,0 +1,117 @@
+.team {
+  margin-top: 200px;
+
+  .team__wrap {
+    padding: 0;
+
+    .team__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        color: $btn-color;
+        margin-bottom: 17px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #898989;
+        margin-bottom: 76px;
+      }
+    }
+
+
+    .team__blocks {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .team__element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 14%;
+
+        h2 {
+          font-size: 22px;
+          line-height: 24px;
+          font-weight: 400;
+          color: $btn-color;
+          margin: 42px 0 12px 0;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 400;
+          color: #898989;
+          padding-bottom: 16px;
+        }
+
+        .p__bottom {
+          text-align: center;
+          width: 195px;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 400;
+          color: #313841;
+          padding-bottom: 14px;
+        }
+
+        .social__team {
+          width: 63px;
+          display: flex;
+          justify-content: space-around;
+
+          a {
+            text-decoration: none;
+            color: $btn-color;
+
+            &:hover {
+              color: red;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .team {
+    margin-top: 50px;
+    .team__wrap {
+      .team__blocks {
+        justify-content: center;
+        .team__element {
+          padding: 0 15px 15px 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 776px) {
+  .team {
+    .team__wrap {
+      .team__title {
+        h2 {
+          font-size: 26px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

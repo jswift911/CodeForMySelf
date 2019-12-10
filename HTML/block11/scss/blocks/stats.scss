@@ -1,0 +1,194 @@
+.stats {
+  margin-top: 190px;
+
+  .stats__wrap {
+
+    .stats__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        color: $btn-color;
+        margin-bottom: 17px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #898989;
+        margin-bottom: 52px;
+      }
+    }
+
+    .stats__blocks {
+      display: flex;
+      justify-content: space-between;
+      max-width: 560px;
+      margin: 0 auto;
+      align-items: flex-end;
+      flex-wrap: wrap;
+
+      .stats__element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          margin-bottom: 22px;
+
+          &:first-child {
+            padding-left: 8px;
+          }
+        }
+
+        h2 {
+          font-size: 24px;
+          line-height: 24px;
+          font-weight: 700;
+          color: $btn-color;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 400;
+          color: #898989;
+        }
+
+      }
+
+    }
+
+    .stats__team {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 80px;
+      align-items: center;
+
+      .stats__team--element {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+
+        img {
+          width: 104px;
+          height: 104px;
+          margin-left: 8px;
+        }
+
+        h2 {
+          font-size: 22px;
+          line-height: 24px;
+          font-weight: 400;
+          color: $btn-color;
+          margin: 18px 0 12px 0;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 400;
+          color: #898989;
+          margin-bottom: 31px;
+        }
+      }
+
+      .stats__quote {
+        display: flex;
+
+        p {
+          width: 508px;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 400;
+          color: #898989;
+          text-align: center;
+        }
+
+        &::before {
+          content: url("../img/stats_quote.png");
+          margin-right: 56px;
+        }
+
+        &::after {
+          content: url("../img/stats_quote.png");
+          margin-left: 45px;
+          transform: rotate(180deg);
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .stats {
+    .stats__wrap {
+      .stats__blocks {
+        justify-content: center;
+        .stats__element {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 776px) {
+  .stats {
+    margin-top: 100px;
+    .stats__wrap {
+      .stats__title {
+        h2 {
+          font-size: 26px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+      .stats__team {
+        .stats__quote {
+          width: 100%;
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .stats {
+    .stats__wrap {
+
+      .stats__blocks {
+        .stats__element {
+            padding-top: 15px;
+        }
+      }
+
+      .stats__team {
+        margin: 80px 15px;
+        .stats__quote {
+          width: 100%;
+
+          &::before, &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
