@@ -63,7 +63,7 @@
 
         img {
           width: 14%;
-          height: 24%
+          height: 23%
         }
 
         &:first-child img, &:last-child img {
@@ -80,6 +80,7 @@
 
 @media (max-width: 776px) {
   .features {
+    padding-top: 100px;
     .features_wrap {
       .features__title {
         h2 {
