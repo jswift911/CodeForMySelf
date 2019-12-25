@@ -1,0 +1,9 @@
+https://psdfreebies.com/psd/creative-agency-web-design-free-psd/
+https://fonts.google.com/
+https://nodejs.org/en/
+https://www.browsersync.io/
+
+cmd
+
+cd your folde
+browser-sync start --server "./" --files "./"
