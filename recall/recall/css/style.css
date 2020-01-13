@@ -1,0 +1,205 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #000;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family:Arial,Verdana,sans-serif;
+	background: rgba(0,0,0,0) url("../images/otz.png") repeat scroll 0 0;
+	}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #e6618c;
+	text-decoration: underline;
+}
+a:hover {
+	color: #fdf208;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #c83867;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Condensed",arial;
+    font-size: 2.2em;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 0 auto;
+    padding: 30px 0 25px;
+    text-align: center;
+}
+p{line-height:23px;margin:0;padding:10px 0;}
+/* --------------- /базовые настройки ---------*/
+
+.logoSoc {
+    background: #fff;
+    padding: 20px 0 15px 0;
+    border-bottom: 1px solid #00314c;
+	margin:0 0 20px 0;
+}
+.widthcenter {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo-main {
+    float: left;
+}
+.socmain p {
+    font-size: 1.5em;
+        font-family: "Roboto Condensed",arial;
+    text-transform: uppercase;
+    color: #ff4e51;
+    margin: 0 40px 0 0;
+    text-align: center;
+	font-weight:bold;
+}
+
+
+section {
+    margin: 0 auto;
+    width: 880px;
+    padding-bottom: 20px;
+}
+.speak > h3 {
+    color: #2c425a;
+    font-family: georgia,serif;
+    font-size: 27px;
+    font-style: italic;
+}
+.speak {
+    background:#fff url("../images/speak.png") no-repeat scroll right bottom;
+    border: 1px solid #8cbdd9;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.speak  > h2{
+	text-align:left; font-size: 20px; padding:0 0 10px 0;
+}
+.speak > p {
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.img_left {
+    float: left;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.yellow, .yellowB {
+    background: #fde866;
+    border-radius: 2px;
+    padding: 0;
+}
+.bold {
+	font-weight: bold;
+}
+.imgico{
+	vertical-align:middle;
+}
+
+/*Стили для слайдера*/
+
+.slickslider {
+	max-width: 930px;
+	margin: 20px;
+}
+
+.left-arrow {
+	position: absolute;
+	top: 210px;
+	left: -20px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.right-arrow {
+	position: absolute;
+	top: 209px;
+	left: 800px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+	color: red;
+}
