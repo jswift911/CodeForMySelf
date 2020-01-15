@@ -1,5 +1,15 @@
 <?php get_header('main') ;?>
 
+<?php
+$lau_cat = get_category(5);
+if ($lau_cat):
+$posts = get_posts(array(
+    'numberposts' => 4,
+    'category' => 5,
+));
+esla_debug($lau_cat);
+?>
+
 <!-- About -->
 <section class="page-section">
     <div class="container ">
@@ -9,72 +19,109 @@
                     <h2 class="title-section"><span class="title-regular">WE ARE</span><br/>LAUTENSCHLAGER</h2>
                     <hr class="title-underline" />
                 </div>
+                <?php
+                $data = [];
+                $i = 0;
+                foreach ($posts as $post) :
+                    setup_postdata($post);
+                    $data[$i]['post_name'] = $post->post_name;
+                    $data[$i]['url'] = get_the_permalink();
+                    $data[$i]['content'] = get_the_content('');
+                    ;?>
+                    <?php $i++; endforeach; ?>
                 <div class="row">
-                    <div class="col-md-6 ">
-                        <div class="col-xs-2 box-icon">
-                            <div class="fa fa-html5 "></div>
-                        </div>
-                        <div class="col-xs-10">
-                            <h3>HTML5 TEMPLATES</h3>
-                        </div>
-                        <div class="col-md-10 col-xs-offset-2">
-                            <p>
-                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-
-                        <div class="col-xs-2 box-icon">
-                            <div class="fa fa-wordpress "></div>
-                        </div>
-                        <div class="col-xs-10">
-                            <h3>WORDPRESS TEMPLATES</h3>
-                        </div>
-                        <div class="col-md-10 col-xs-offset-2">
-                            <p>
-                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 ">
-
-                        <div class="col-xs-2 box-icon">
-                            <div class="fa fa-camera "></div>
-                        </div>
-                        <div class="col-xs-10">
-                            <h3>STOCK PHOTOS</h3>
-                        </div>
-                        <div class="col-md-10 col-xs-offset-2">
-                            <p>
-                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-
-                        <div class="col-xs-2 box-icon">
-                            <div class="fa fa-joomla "></div>
-                        </div>
-                        <div class="col-xs-10">
-                            <h3>JOOMLA TEMPLATES</h3>
-                        </div>
-                        <div class="col-md-10 col-xs-offset-2">
-                            <p>
-                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                            </p>
-                        </div>
-                    </div>
+                        <?php foreach (array_reverse($data) as $k => $item) :; // вывод массива с конца в начало, иначе как в bluerex посты будут с конца идти?>
+                            <div class="col-md-6 ">
+                                <?= $item['content'];?>
+                            </div>
+                        <?php endforeach; ?>
                 </div>
             </div>
             <div class="col-md-4 col-md-pull-8 ">
-                <img class="img-responsive" src="http://placehold.it/365x376" alt="" />
+                <?php if (get_field('lau_img', $lau_cat)):;?>
+                    <img class="img-responsive" src="<?= get_field('lau_img', $lau_cat);?>" alt="" />
+                <?php endif;?>
             </div>
         </div>
     </div>
+    <?php wp_reset_postdata(); unset($data, $posts);?>
 </section>
+<?php endif; // if $lau_cat ?>
+
+<!--<section class="page-section">-->
+<!--    <div class="container ">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-8 col-md-push-4">-->
+<!--                <div class="col-md-12">-->
+<!--                    <h2 class="title-section"><span class="title-regular">WE ARE</span><br/>LAUTENSCHLAGER</h2>-->
+<!--                    <hr class="title-underline" />-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-6 ">-->
+<!--                        <div class="col-xs-2 box-icon">-->
+<!--                            <div class="fa fa-html5 "></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-xs-10">-->
+<!--                            <h3>HTML5 TEMPLATES</h3>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-10 col-xs-offset-2">-->
+<!--                            <p>-->
+<!--                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6 ">-->
+<!---->
+<!--                        <div class="col-xs-2 box-icon">-->
+<!--                            <div class="fa fa-wordpress "></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-xs-10">-->
+<!--                            <h3>WORDPRESS TEMPLATES</h3>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-10 col-xs-offset-2">-->
+<!--                            <p>-->
+<!--                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-6 ">-->
+<!---->
+<!--                        <div class="col-xs-2 box-icon">-->
+<!--                            <div class="fa fa-camera "></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-xs-10">-->
+<!--                            <h3>STOCK PHOTOS</h3>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-10 col-xs-offset-2">-->
+<!--                            <p>-->
+<!--                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6 ">-->
+<!---->
+<!--                        <div class="col-xs-2 box-icon">-->
+<!--                            <div class="fa fa-joomla "></div>-->
+<!--                        </div>-->
+<!--                        <div class="col-xs-10">-->
+<!--                            <h3>JOOMLA TEMPLATES</h3>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-10 col-xs-offset-2">-->
+<!--                            <p>-->
+<!--                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-4 col-md-pull-8 ">-->
+<!--                <img class="img-responsive" src="http://placehold.it/365x376" alt="" />-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 
 
