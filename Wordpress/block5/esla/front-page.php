@@ -7,7 +7,7 @@ $posts = get_posts(array(
     'numberposts' => 4,
     'category' => 5,
 ));
-esla_debug($lau_cat);
+//esla_debug(the_field('section_header',$lau_cat));
 ?>
 
 <!-- About -->
@@ -16,7 +16,9 @@ esla_debug($lau_cat);
         <div class="row">
             <div class="col-md-8 col-md-push-4">
                 <div class="col-md-12">
-                    <h2 class="title-section"><span class="title-regular">WE ARE</span><br/>LAUTENSCHLAGER</h2>
+                    <?php if (get_field('section_header', $lau_cat)):; //если поля ищем в рубрике, то после запятой прописываем переменную с рубрикой?>
+                        <h2 class="title-section"><span class="title-regular"><?php the_field('lau_span', $lau_cat) ;?></span><br/><?php the_field('lau_header', $lau_cat) ;?></h2>
+                    <?php endif;?>
                     <hr class="title-underline" />
                 </div>
                 <?php
@@ -48,187 +50,51 @@ esla_debug($lau_cat);
 </section>
 <?php endif; // if $lau_cat ?>
 
-<!--<section class="page-section">-->
-<!--    <div class="container ">-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-8 col-md-push-4">-->
-<!--                <div class="col-md-12">-->
-<!--                    <h2 class="title-section"><span class="title-regular">WE ARE</span><br/>LAUTENSCHLAGER</h2>-->
-<!--                    <hr class="title-underline" />-->
-<!--                </div>-->
-<!--                <div class="row">-->
-<!--                    <div class="col-md-6 ">-->
-<!--                        <div class="col-xs-2 box-icon">-->
-<!--                            <div class="fa fa-html5 "></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-xs-10">-->
-<!--                            <h3>HTML5 TEMPLATES</h3>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-10 col-xs-offset-2">-->
-<!--                            <p>-->
-<!--                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-6 ">-->
-<!---->
-<!--                        <div class="col-xs-2 box-icon">-->
-<!--                            <div class="fa fa-wordpress "></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-xs-10">-->
-<!--                            <h3>WORDPRESS TEMPLATES</h3>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-10 col-xs-offset-2">-->
-<!--                            <p>-->
-<!--                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="row">-->
-<!--                    <div class="col-md-6 ">-->
-<!---->
-<!--                        <div class="col-xs-2 box-icon">-->
-<!--                            <div class="fa fa-camera "></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-xs-10">-->
-<!--                            <h3>STOCK PHOTOS</h3>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-10 col-xs-offset-2">-->
-<!--                            <p>-->
-<!--                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-6 ">-->
-<!---->
-<!--                        <div class="col-xs-2 box-icon">-->
-<!--                            <div class="fa fa-joomla "></div>-->
-<!--                        </div>-->
-<!--                        <div class="col-xs-10">-->
-<!--                            <h3>JOOMLA TEMPLATES</h3>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-10 col-xs-offset-2">-->
-<!--                            <p>-->
-<!--                                Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-4 col-md-pull-8 ">-->
-<!--                <img class="img-responsive" src="http://placehold.it/365x376" alt="" />-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 
 
 
-
-
+<?php
+$fea_cat = get_category(6);
+if ($fea_cat):
+$posts = get_posts(array(
+    'numberposts' => 8,
+    'category' => 6,
+));
+?>
 <!-- Features -->
 <section class="page-section section-grey">
     <div class="container ">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="title-section"><span class="title-regular">SPECIAL</span><br/>FEATURES</h2>
+                <?php if (get_field('fea_header', $fea_cat)):; //если поля ищем в рубрике, то после запятой прописываем переменную с рубрикой?>
+                    <h2 class="title-section"><span class="title-regular"><?php the_field('fea_span', $fea_cat) ;?></span><br/><?php the_field('fea_header', $fea_cat) ;?></h2>
+                <?php endif;?>
                 <hr class="title-underline " />
+                <?php
+                $data = [];
+                $i = 0;
+                foreach ($posts as $post) :
+                    setup_postdata($post);
+                    $data[$i]['post_name'] = $post->post_name;
+                    $data[$i]['url'] = get_the_permalink();
+                    $data[$i]['content'] = get_the_content('');
+                    ;?>
+                    <?php $i++; endforeach; ?>
                 <div class="row">
-                    <div class="col-sm-3">
-                        <div class="feature-box">
-                            <div class="feature-box-icon">
-                                <i class="fa fa-code"></i>
+                        <?php foreach (array_reverse($data) as $k => $item) :; // вывод массива с конца в начало, иначе как в bluerex посты будут с конца идти?>
+                            <div class="col-sm-3 ">
+                                <div class="feature-box">
+                                <?= $item['content'];?>
+                                </div>
                             </div>
-                            <div class="feature-box-info">
-                                <h4>Clean Code</h4>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="feature-box">
-                            <div class="feature-box-icon">
-                                <i class="fa fa-expand"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4>Bootstrap 3</h4>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="feature-box">
-                            <div class="feature-box-icon">
-                                <i class="fa fa-font"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4>Font Awesome</h4>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="feature-box">
-                            <div class="feature-box-icon">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4>Color Options</h4>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="feature-box">
-                            <div class="feature-box-icon">
-                                <i class="fa fa-picture-o"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4>Clean Headers</h4>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="feature-box">
-                            <div class="feature-box-icon">
-                                <i class="fa fa-archive"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4>Portfolio</h4>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="feature-box">
-                            <div class="feature-box-icon">
-                                <i class="fa fa-expand"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4>Lightbox</h4>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="feature-box">
-                            <div class="feature-box-icon">
-                                <i class="fa fa-picture-o"></i>
-                            </div>
-                            <div class="feature-box-info">
-                                <h4>Gallery</h4>
-                                <p>Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
+                        <?php endforeach; ?>
                 </div>
             </div>
         </div>
     </div>
+    <?php wp_reset_postdata(); unset($data, $posts);?>
 </section>
-
+<?php endif; // if $fea_cat ?>
 
 
 
