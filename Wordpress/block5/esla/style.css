@@ -34,3 +34,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .hero-header {
     background: #cccccc;
 }
+
+.spotlight-img-cont {
+    background: #cccccc;
+}
+
+.gallery-custom .blocks-gallery-item {
+    margin: 0;
+}
