@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/bonus";
+@import "blocks/footer";
+@import "blocks/content";

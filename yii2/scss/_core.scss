@@ -1,0 +1,30 @@
+/**
+*Основные стили
+**/
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  //@font-face {
+  //  font-family: "Formular";
+  //  src: url("../fonts/formular-bold-webfont.woff") format("woff"),
+  //  url("../fonts/formular-bold-webfont.woff2") format("woff2");
+  //  src: url("../fonts/formular-medium-webfont.woff") format("woff"),
+  //  url("../fonts/formular-medium-webfont.woff2") format("woff2");
+  //  src: url("../fonts/formular-regular-webfont.woff") format("woff"),
+  //  url("../fonts/formular-regular-webfont.woff2") format("woff2");
+  //}
+  font-size: 16px;
+}
+
+.container {
+  @include min-max(320px, 100%, 0);
+  background: #121332;
+}
+
+.wrap {
+  @include min-max(320px, 1106px, 15px);
+}
+
+p {
+  color: $white;
+}

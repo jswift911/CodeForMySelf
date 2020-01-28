@@ -1,0 +1,78 @@
+.bonus {
+  margin-top: 32px;
+  .bonus__wrap {
+    .bonus__blocks {
+      .bonus__element {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 96px;
+        background: linear-gradient(114.62deg, #2DEFC838 0%, #B0DB8645 52.08%, #FFCAAE47 100%), linear-gradient(177.65deg, #3961D242 0%, #358EAA08 100%);
+        border-radius: 8px;
+        text-decoration: none;
+
+        .bonus__img {
+          margin: 0 32px;
+        }
+
+        .bonus__num {
+          margin-right: 32px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: -0.380455px;
+          color: #F5E398;
+          min-width: 56px;
+        }
+
+        .bonus__name {
+          width: 720px;
+          margin-right: 24px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: -0.380455px;
+          min-width: 266px;
+        }
+
+        span {
+          margin-right: 32px;
+          font-size: 8px;
+          line-height: 16px;
+          border: 1px solid #acacac;
+          border-radius: 22px;
+          width: 25px;
+          text-align: center;
+          color: #fff;
+          min-width: 27px;
+
+          &:nth-child(2) {
+            margin-left: -2px;
+          }
+        }
+
+        .bonus__arrow {
+          padding-right: 15px;
+          min-width: 12px;
+        }
+
+
+        &:nth-child(2) {
+          margin: 16px 0;
+        }
+
+        &:nth-child(3) {
+          margin: 16px 0;
+        }
+
+        &:nth-child(2) .bonus__img {
+            margin: 0 37.5px;
+        }
+
+      }
+
+    }
+  }
+}
