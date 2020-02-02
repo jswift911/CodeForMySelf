@@ -42,6 +42,7 @@
 <!--about-end-->
 <!--product-starts-->
 <?php if($hits) :;?>
+<?php $curr = \ishop\App::$app->getProperty('currency');?>
 <div class="product">
     <div class="container">
         <div class="product-top">
@@ -54,15 +55,15 @@
                             <h3><a href="product/<?= $hit->alias ;?>"><?= $hit->title ;?></a></h3>
                             <p>Explore Now</p>
                             <h4>
-                                <a class="add-to-cart-link" href="cat/add?id=<?= $hit->id;?>"><i></i></a> <span class=" item_price">$ <?= $hit->price ;?></span>
+                                <a class="add-to-cart-link" href="cat/add?id=<?= $hit->id;?>"><i></i></a> <span class=" item_price"><?=$curr['symbol_left'];?><?= $hit->price * $curr['value'];?><?=$curr['symbol_right'];?></span>
                                 <?php if ($hit->old_price) :;?>
-                                    <small><del><?= $hit->old_price ;?></del></small>
+                                    <small><del><?=$curr['symbol_left'];?><?= $hit->old_price * $curr['value'];?><?=$curr['symbol_right'];?></del></small>
                                 <?php endif;?>
                             </h4>
                         </div>
                         <?php if ($hit->old_price) :;?>
                         <div class="srch">
-                            <?php $discount =  100-(($hit->price * 100)/$hit->old_price);?>
+                            <?php $discount =  100-(($hit->price * 100)/$hit->old_price); // Расчет и вывод скидки?>
                             <span><?= round($discount, 1);?> %</span>
                         </div>
                         <?php endif;?>

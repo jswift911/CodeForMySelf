@@ -11,7 +11,7 @@ class Registry
     protected static $properties = [];
 
 
-    public static function getProperty($name)
+    public function getProperty($name)
     {
         if (isset(self::$properties[$name])) {
             return self::$properties[$name];

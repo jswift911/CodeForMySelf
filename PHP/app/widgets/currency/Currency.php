@@ -4,6 +4,8 @@
 namespace app\widgets\currency;
 
 
+use ishop\App;
+
 class Currency
 {
     protected $tpl; // Шаблон вывода списка валют
@@ -12,14 +14,15 @@ class Currency
 
     public function __construct()
     {
-        $this->tpl = __DIR__ . 'currency_tpl/currency.php';
+        $this->tpl = __DIR__ . '/currency_tpl/currency.php';
         $this->run();
     }
 
     // Получает список доступных валют и возвращает текущую валюту
     protected function run() {
-
-        $this->getHtml();
+        $this->currencies = App::$app->getProperty('currencies');
+        $this->currency = App::$app->getProperty('currency');
+        echo $this->getHtml();
     }
 
 
