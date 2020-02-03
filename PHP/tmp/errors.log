@@ -1678,3 +1678,18 @@
          Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
          Строка 43
 ==================================================
+[2020-02-03 15:09:18]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-03 15:12:22]
+         Текст ошибки: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\models\Product.php | 
+         Строка 24
+==================================================
+[2020-02-03 15:18:25]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
