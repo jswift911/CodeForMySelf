@@ -1708,3 +1708,43 @@
          Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
          Строка 43
 ==================================================
+[2020-02-03 18:22:00]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-03 18:28:06]
+         Текст ошибки: Контроллер app\controllers\CatController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-03 18:28:32]
+         Текст ошибки: Контроллер app\controllers\CatController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-03 18:29:16]
+         Текст ошибки: Контроллер app\controllers\CartController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-03 18:29:24]
+         Текст ошибки: Контроллер app\controllers\CartController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-03 18:35:20]
+         Текст ошибки: Контроллер app\controllers\CartController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-03 18:35:24]
+         Текст ошибки: Контроллер app\controllers\CartController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-03 18:51:51]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/Cart/add.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
