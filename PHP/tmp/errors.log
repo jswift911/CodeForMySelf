@@ -1693,3 +1693,18 @@
          Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
          Строка 46
 ==================================================
+[2020-02-03 16:00:35]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-03 16:39:07]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-03 16:47:36]
+         Текст ошибки: Контроллер app\controllers\CategoryController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================

@@ -3,8 +3,9 @@
     <div class="container">
         <div class="breadcrumbs-main">
             <ol class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">Single</li>
+<!--                <li><a href="index.html">Home</a></li>-->
+<!--                <li class="active">Single</li>-->
+                <?=$breadcrumbs;?>
             </ol>
         </div>
     </div>
@@ -59,7 +60,7 @@
                                 <div class="clearfix"> </div>
                             </div>
 
-                            <h5 class="item_price"><?=$curr['symbol_left'];?><?=$product->price * $curr['value'];?><?=$curr['symbol_right'];?></h5>
+                            <h5 class="item_price" id="base-price" data-base="<?=$product->price * $curr['value'];?>"><?=$curr['symbol_left'];?><?=$product->price * $curr['value'];?><?=$curr['symbol_right'];?></h5>
                             <?php if($product->old_price): ?>
                                 <del><?=$curr['symbol_left'];?><?=$product->old_price * $curr['value'];?><?=$curr['symbol_right'];?></del>
                             <?php endif; ?>
@@ -68,18 +69,12 @@
                                 <ul>
                                     <li>Color
                                         <select>
-                                            <option>Silver</option>
-                                            <option>Black</option>
-                                            <option>Dark Black</option>
-                                            <option>Red</option>
-                                        </select></li>
-                                    <li class="size-in">Size<select>
-                                            <option>Large</option>
-                                            <option>Medium</option>
-                                            <option>small</option>
-                                            <option>Large</option>
-                                            <option>small</option>
-                                        </select></li>
+                                            <option>Выбрать цвет</option>
+                                            <?php foreach($mods as $mod): ?>
+                                                <option data-title="<?=$mod->title;?>" data-price="<?=$mod->price * $curr['value'];?>" value="<?=$mod->id;?>"><?=$mod->title;?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </li>
                                     <div class="clearfix"> </div>
                                 </ul>
                             </div>
