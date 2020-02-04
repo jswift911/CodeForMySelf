@@ -14,3 +14,8 @@ function redirect($http = false) {
     header("Location: $redirect");
     exit;
 }
+
+// Обертка для поиска
+function h($str){
+    return htmlspecialchars($str, ENT_QUOTES); // ENT_QOUTES - преобразовывает двойные кавычки
+}

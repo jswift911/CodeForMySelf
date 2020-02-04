@@ -45,13 +45,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="col-md-6 top-header-left">
                 <div class="cart box_1">
-                    <a href="checkout.html">
+<!--                    Корзина в хедере-->
+                    <a href="cart/show" onclick="getCart(); return false;">
                         <div class="total">
-                            <span class="simpleCart_total"></span></div>
-                        <img src="images/cart-1.png" alt="" />
+                            <img src="images/cart-1.png" alt="" />
+                            <?php if(!empty($_SESSION['cart'])): ?>
+                                <span class="simpleCart_total"><?=$_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'] . $_SESSION['cart.currency']['symbol_right'];?></span>
+                            <?php else: ?>
+                                <span class="simpleCart_total">Empty Cart</span>
+                            <?php endif; ?>
+                        </div>
                     </a>
-                    <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-                    <div class="clearfix"> </div>
+<!--                    <a href="checkout.html">-->
+<!--                        <div class="total">-->
+<!--                            <span class="simpleCart_total"></span></div>-->
+<!--                        <img src="images/cart-1.png" alt="" />-->
+<!--                    </a>-->
+<!--                    <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>-->
+<!--                    <div class="clearfix"> </div>-->
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -82,8 +93,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="col-md-3 header-right">
                 <div class="search-bar">
-                    <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-                    <input type="submit" value="">
+                    <form action="search" method="get" autocomplete="off">
+                        <input placeholder="Search..." type="text" class="typeahead" id="typeahead" name="s">
+                        <input type="submit" value="">
+                    </form>
+<!--                    <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">-->
+<!--                    <input type="submit" value="">-->
                 </div>
             </div>
             <div class="clearfix"> </div>
@@ -160,6 +175,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!--footer-end-->
 
+<!--Модальное окно корзины-->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Корзина</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+                <a href="cart/view" type="button" class="btn btn-primary">Оформить заказ</a>
+                <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <?php $curr = \ishop\App::$app->getProperty('currency'); ?>
 <script>
     let path = '<?=PATH;?>',
@@ -169,7 +205,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </script>
 
 <script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/simpleCart.min.js"> </script>
+<!--<script src="js/simpleCart.min.js"> </script>-->
 <!--dropdown-->
 <script src="js/jquery.easydropdown.js"></script>
 <!--Slider-Starts-Here-->
@@ -197,6 +233,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="megamenu/js/megamenu.js"></script>
 <script src="js/imagezoom.js"></script>
 <script defer src="js/jquery.flexslider.js"></script>
+<script defer src="js/bootstrap.min.js"></script>
+<script src="js/typeahead.bundle.js"></script>
 <script>
     // Can also be used with $(document).ready()
     $(window).load(function() {
