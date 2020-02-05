@@ -1958,3 +1958,143 @@
          Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
          Строка 46
 ==================================================
+[2020-02-05 12:03:44]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-05 12:05:51]
+         Текст ошибки: Контроллер app\controllers\CategoryController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-05 12:05:51]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-05 12:06:05]
+         Текст ошибки: Контроллер app\controllers\CategoryController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-05 12:06:09]
+         Текст ошибки: Контроллер app\controllers\CategoryController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-05 13:55:57]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-05 13:56:07]
+         Текст ошибки: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\CategoryController.php | 
+         Строка 29
+==================================================
+[2020-02-05 13:56:27]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/Category/view.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
+[2020-02-05 13:57:42]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/Category/view.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
+[2020-02-05 14:35:21]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-05 14:38:56]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-05 15:02:59]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') -- keep-cache' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-02-05 15:31:55]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-05 15:48:18]
+         Текст ошибки: Access to undeclared static property: app\controllers\CategoryController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-02-05 15:54:29]
+         Текст ошибки: Контроллер app\controllers\UserController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-05 15:54:34]
+         Текст ошибки: Контроллер app\controllers\UserController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-02-05 16:00:51]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/User/login.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
+[2020-02-05 16:00:55]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/User/signup.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
+[2020-02-05 16:14:16]
+         Текст ошибки: Call to undefined method app\models\User::load() | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\UserController.php | 
+         Строка 13
+==================================================
+[2020-02-05 16:14:19]
+         Текст ошибки: Call to undefined method app\models\User::load() | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\UserController.php | 
+         Строка 13
+==================================================
+[2020-02-05 16:28:44]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-05 16:40:29]
+         Текст ошибки: Fail to load language file 'C:\OSPanel\domains\WFM\PHP/public/validator/lang/ru.php' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\vlucas\valitron\src\Valitron\Validator.php | 
+         Строка 113
+==================================================
+[2020-02-05 16:40:29]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-02-05 16:43:44]
+         Текст ошибки: Fail to load language file 'C:\OSPanel\domains\WFM\PHP/public/validator/lang/ru.php' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\vlucas\valitron\src\Valitron\Validator.php | 
+         Строка 113
+==================================================
+[2020-02-05 16:44:11]
+         Текст ошибки: Fail to load language file 'C:\OSPanel\domains\WFM\PHP/public/validator/lang/ru.php' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\vlucas\valitron\src\Valitron\Validator.php | 
+         Строка 113
+==================================================
+[2020-02-05 16:45:26]
+         Текст ошибки: Fail to load language file 'C:\OSPanel\domains\WFM\PHP/public/validator/lang/ru.php' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\vlucas\valitron\src\Valitron\Validator.php | 
+         Строка 113
+==================================================
+[2020-02-05 16:46:52]
+         Текст ошибки: Fail to load language file 'C:\OSPanel\domains\WFM\PHP/public/validator/lang/ru.php' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\vlucas\valitron\src\Valitron\Validator.php | 
+         Строка 113
+==================================================
+[2020-02-05 16:47:54]
+         Текст ошибки: Fail to load language file 'C:\OSPanel\domains\WFM\PHP/public/validator/lang/ru.php' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\vlucas\valitron\src\Valitron\Validator.php | 
+         Строка 113
+==================================================
