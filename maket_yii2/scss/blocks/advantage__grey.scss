@@ -1,0 +1,41 @@
+.advantage__grey {
+  background-color: $grey;
+  .advantage__wrap {
+    .advantage__block {
+      height: 628px;
+      display: flex;
+      background-color: $grey;
+      align-items: center;
+
+      .advantage__info {
+        margin-left: 16px;
+
+        h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+        color: #F8B932;
+      }
+
+        p {
+          line-height: 24px;
+          margin: 20px 0;
+
+          & span {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 24px;
+          }
+        }
+      }
+
+
+      img {
+        width: 535px;
+        height: 396px;
+      }
+    }
+  }
+}

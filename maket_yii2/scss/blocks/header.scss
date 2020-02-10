@@ -1,0 +1,227 @@
+.header {
+  height: 938px;
+  background: url("../img/header-bg.jpg") no-repeat;
+  background-size: cover;
+  .header__wrap {
+    .header__menu {
+      height: 137px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        margin-right: 47px;
+      }
+
+      ul {
+        display: flex;
+        margin: 0 47px 0 auto;
+
+        & > li > a {
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: .875rem;
+          line-height: 1.25rem;
+          transition-duration: 500ms;
+          transition-property: color;
+          text-decoration: none;
+          color: $white;
+          margin-right: 17px;
+          list-style-type: none;
+
+          &:hover {
+            color: #3961d2;
+          }
+        }
+      }
+
+      .header__btn {
+        $values: (fs: 15px, lh: 0, ls: 0.6px, w: 192px, br: 8px, bg: $btn-color, clr: $black);
+        @include btn($values...) {
+          padding: 18px 0;
+          font-weight: 500;
+          text-transform: uppercase;
+          min-width: 192px;
+        };
+      }
+    }
+
+    .header__clearfix {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 22px;
+      color: $white;
+      margin-top: 38px;
+      width: 50%;
+    }
+
+    .header__info {
+      width: 1366px;
+      height: 740px;
+      padding: 0;
+      background: url("../img/header-bg2.png");
+      margin-left: -154px;
+
+      .header__info--wrap {
+        padding: 0 22px;
+        padding-top: 24px;
+
+        h1 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 66px;
+          line-height: 96px;
+          text-transform: uppercase;
+          background: $rainbow;
+          // Для градиента текста
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: table;
+        }
+
+        h2 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 32px;
+          margin: 16px 0 32px 0;
+        }
+
+        ul {
+          width: 41%;
+          margin-left: 18px;
+
+         & li {
+           list-style-image: url("../img/list-marker.svg");
+           margin-bottom: 16px;
+           font-size: 14px;
+           line-height: 22px;
+
+            &  span {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 22px;
+            }
+          }
+
+          & li:last-child {
+            width: 95%;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+    .header {
+      .header__wrap {
+        .header__menu {
+          flex-wrap: wrap;
+
+          .logo {
+            padding-top: 30px;
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+          }
+          ul {
+            margin: 0 auto 0 10%;
+          }
+          .header__btn {
+            margin: 0 auto;
+          }
+        }
+        .header__clearfix {
+          text-align: center;
+          width: 100%;
+        }
+        .header__info {
+          background: none;
+          text-align: center;
+          width: 100%;
+          margin: 0 auto;
+          .header__info--wrap {
+
+            h1 {
+              width: 100%;
+              text-align: center;
+            }
+
+            ul {
+              width: 100%;
+              & li {
+                text-align: center;
+                &:last-child {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 708px) {
+  .header {
+    .header__wrap {
+      .header__info {
+        .header__info--wrap {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 614px) {
+  .header {
+    .header__wrap {
+      .header__menu {
+        ul {
+          flex-basis: 100%;
+          justify-content: center;
+          margin: 20px 0;
+        }
+        .header__btn {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    .header__wrap {
+      padding: 0 5px;
+      .header__menu {
+        ul li:last-child a {
+          margin-right: 0;
+        }
+      }
+      .header__info {
+        .header__info--wrap {
+          h1 {
+            font-size: 2.25rem;
+            text-align: center;
+            line-height: 40px;
+          }
+
+          h2 {
+            font-size: 1rem;
+          }
+
+          ul {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

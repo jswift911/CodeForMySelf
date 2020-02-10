@@ -1,0 +1,21 @@
+/**
+*Основные стили
+**/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: $white;
+}
+
+.container {
+  @include min-max(320px, 100%, 0);
+}
+
+.wrap {
+  @include min-max(320px, 1102px, 30px);
+}
+
+p {
+  color: $white;
+}

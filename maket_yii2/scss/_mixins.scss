@@ -1,0 +1,30 @@
+@mixin min-max ($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin btn ($bg: $btn-color, $fs: 0.75rem, $lh: 13px, $ls: 0.54px, $br: 40px, $w: 114px, $clr: $black) {
+  width: $w;
+  color: $clr;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  background: $bg;
+  border-radius: $br;
+  padding: 13px 0;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  @content;
+
+  &:hover {
+    background: linear-gradient(180deg,rgba(255,255,255,.45) 0%,rgba(255,255,255,0) 100%), #efbb1c;
+    color: #392a1c;
+    transition-duration: 500ms;
+    transition-property: color;
+  }
+}
