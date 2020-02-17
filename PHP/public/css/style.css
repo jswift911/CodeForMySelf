@@ -1046,7 +1046,7 @@ a.mask {
 	line-height: 27px;
 	color: #555555;
 	cursor: pointer;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	font-weight: normal;
 	margin-top: 0;
 }
@@ -1431,7 +1431,7 @@ a.mask {
     margin-top: 2.2em;
 }
 .account-left input[type="text"],.account-left input[type="password"], .account-left input[type="email"] {
-    width: 90%;
+    /*width: 90%;*/
     margin: 0px;
     color: #000;
     background: none;
@@ -3077,7 +3077,8 @@ ul.tag-men {
 	float: left;
 }
 
-#cart table img {
+#cart img,
+.cart table img{
 	height: 50px;
 }
 
@@ -3189,4 +3190,42 @@ span.twitter-typeahead {
 	position: relative;
 	top: -2px;
 }
-/*Registration end*/
+
+form .has-success .form-control{
+	border-color: green;
+}
+form .has-error .form-control{
+	border-color: red;
+}
+.has-error, .has-success{
+	position: relative;
+}
+.form-control-feedback {
+	right: 10px;
+	top: 25px;
+}
+
+@media (max-width:768px){
+	.account-left input[type="email"] {
+		width: 95%;
+	}
+}
+
+.preloader {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:9999;
+	background-color:#fefefe;
+	opacity: .7;
+	display: none;
+}
+.preloader img {
+	position:relative;
+	left:50%;
+	top:50vh;
+	margin:-100px 0 0 -100px;
+}
+

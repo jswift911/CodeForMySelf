@@ -9,6 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <!--    Подставляет перед каждым подключением файлов слэш, например /css/bootstrap.css-->
     <base href="/">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <?=$this->getMeta();?>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="megamenu/css/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />
@@ -215,6 +216,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
 </div>
 
+<div class="preloader"><img src="images/ring.svg" alt=""></div>
+<div class="preloader"><img src="images/ring.svg" alt=""></div>
 
 <?php $curr = \ishop\App::$app->getProperty('currency'); ?>
 <script>
@@ -254,6 +257,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/imagezoom.js"></script>
 <script defer src="js/jquery.flexslider.js"></script>
 <script defer src="js/bootstrap.min.js"></script>
+<script defer src="js/validator.min.js"></script>
 <script src="js/typeahead.bundle.js"></script>
 <script>
     // Can also be used with $(document).ready()

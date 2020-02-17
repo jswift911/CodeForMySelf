@@ -24,6 +24,15 @@ abstract class Model {
         }
     }
 
+    // Сохраняет данные в таблицу БД
+    public function save($table){
+        $tbl = \R::dispense($table); // отправка
+        foreach($this->attributes as $name => $value){
+            $tbl->$name = $value;
+        }
+        return \R::store($tbl); // возвращает либо 0, либо id сохраненного запроса
+    }
+
     // Валидация через Valitron
     public function validate($data){
         Validator::langDir(WWW . '/validator/lang'); // из какой папки брать файлы с языками (по умолчанию composer/..../lang)

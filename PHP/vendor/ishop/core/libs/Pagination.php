@@ -83,6 +83,13 @@ class Pagination{
     // Метод получает свойство $uri (get-параметры в командной строке ?page=1)
     public function getParams() {
         $url = $_SERVER['REQUEST_URI'];
+
+        // Фильтры
+        preg_match_all("#filter=[\d,&]#", $url, $matches);
+        if (count($matches[0]) > 1) {
+            $url = preg_replace("#filter=[\d,&]+#", "", $url, 1);
+        }
+
         $url = explode('?', $url); // разбиваем адресную строку по ?
         $uri = $url[0] . '?';
         if (isset($url[1]) && $url[1] != '') {
