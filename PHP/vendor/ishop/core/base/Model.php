@@ -33,6 +33,15 @@ abstract class Model {
         return \R::store($tbl); // возвращает либо 0, либо id сохраненного запроса
     }
 
+    // Изменяет данные в таблице БД
+    public function update($table, $id){
+        $bean = \R::load($table, $id);
+        foreach($this->attributes as $name => $value){
+            $bean->$name = $value;
+        }
+        return \R::store($bean);
+    }
+
     // Валидация через Valitron
     public function validate($data){
         Validator::langDir(WWW . '/validator/lang'); // из какой папки брать файлы с языками (по умолчанию composer/..../lang)

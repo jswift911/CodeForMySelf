@@ -17,7 +17,7 @@ class Menu{
     protected $cache = 3600; // Кэш на 1 час
     protected $cacheKey = 'ishop_menu'; // Ключ для кэша
     protected $attrs = []; // Дополнительные атрибуты для разметки менюшки (id, data-атрибут и тд)
-    protected $prepend = ''; // Для админки
+    protected $prepend = ''; // html вставляется перед кодом (например в select самостоятельная категория)
 
     public function __construct($options = []){
         $this->tpl = __DIR__ . '/menu_tpl/menu.php'; // Путь к шаблону по умолчанию, если в разметке watches.php заполнить путь вручную, то будет использоваться он
