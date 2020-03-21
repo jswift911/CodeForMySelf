@@ -4,6 +4,8 @@ use ishop\Router;
 
 Router::add('^product/(?P<alias>[a-z0-9-]+)/?$', ['controller' => 'Product', 'action' => 'view']);
 Router::add('^category/(?P<alias>[a-z0-9-]+)/?$', ['controller' => 'Category', 'action' => 'view']);
+Router::add('^news$', ['controller' => 'News', 'action' => 'view']); // Все новости
+Router::add('^news/(?P<id>[a-z0-9-]+)/?$', ['controller' => 'News', 'action' => 'viewOne']); // Одна новость
 
 // Маршруты по умолчанию
 Router::add('^admin$', ['controller' => 'Main', 'action' => 'index', 'prefix' => 'admin']);

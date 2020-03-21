@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3307
--- Время создания: Фев 17 2020 г., 19:03
+-- Время создания: Мар 20 2020 г., 16:18
 -- Версия сервера: 5.6.38-log
 -- Версия PHP: 7.1.12
 
@@ -42,7 +42,8 @@ INSERT INTO `attribute_group` (`id`, `title`) VALUES
 (2, 'Стекло'),
 (3, 'Ремешок'),
 (4, 'Корпус'),
-(5, 'Индикация');
+(5, 'Индикация'),
+(7, 'Тестовая группа');
 
 -- --------------------------------------------------------
 
@@ -63,24 +64,35 @@ INSERT INTO `attribute_product` (`attr_id`, `product_id`) VALUES
 (1, 1),
 (1, 2),
 (1, 3),
+(1, 41),
+(1, 42),
+(1, 43),
 (2, 4),
+(3, 40),
 (5, 1),
 (5, 2),
 (5, 3),
 (5, 4),
+(5, 41),
+(5, 42),
+(5, 43),
 (8, 1),
 (8, 2),
 (8, 3),
 (8, 4),
+(8, 41),
+(8, 42),
 (12, 1),
 (12, 2),
 (12, 3),
 (12, 4),
+(12, 41),
 (18, 1),
 (18, 2),
 (18, 4),
+(18, 41),
 (19, 3),
-(20, 1);
+(20, 3);
 
 -- --------------------------------------------------------
 
@@ -117,7 +129,8 @@ INSERT INTO `attribute_value` (`id`, `value`, `attr_group_id`) VALUES
 (16, 'Керамика', 4),
 (17, 'Алюминий', 4),
 (18, 'Аналоговые', 5),
-(19, 'Цифровые', 5);
+(19, 'Цифровые', 5),
+(20, 'Тестовый атрибут!!!', 7);
 
 -- --------------------------------------------------------
 
@@ -177,7 +190,10 @@ INSERT INTO `category` (`id`, `title`, `alias`, `parent_id`, `keywords`, `descri
 (11, 'Электронные', 'elektronnye-11', 2, 'Электронные', 'Электронные'),
 (12, 'Механические', 'mehanicheskie-12', 2, 'Механические', 'Механические'),
 (13, 'Adriatica', 'adriatica', 11, 'Adriatica', 'Adriatica'),
-(14, 'Anne Klein', 'anne-klein', 12, 'Anne Klein', 'Anne Klein');
+(14, 'Anne Klein', 'anne-klein', 12, 'Anne Klein', 'Anne Klein'),
+(23, 'Детская категория', 'detskaya-kategoriya', 3, '123', '321'),
+(24, 'Тестовая категория', 'testovaya-kategoriya-24', 0, '111', '222'),
+(25, 'Подтестовая категория', 'podtestovaya-kategoriya', 24, '123', '321');
 
 -- --------------------------------------------------------
 
@@ -202,7 +218,8 @@ CREATE TABLE `currency` (
 INSERT INTO `currency` (`id`, `title`, `code`, `symbol_left`, `symbol_right`, `value`, `base`) VALUES
 (1, 'гривна', 'UAH', '', ' грн.', 25.80, '0'),
 (2, 'доллар', 'USD', '$ ', '', 1.00, '1'),
-(3, 'Евро', 'EUR', '€ ', '', 0.88, '0');
+(3, 'Евро', 'EUR', '€ ', '', 0.88, '0'),
+(4, 'Рубль', 'RUB', '', ' руб.', 70.00, '0');
 
 -- --------------------------------------------------------
 
@@ -223,7 +240,12 @@ CREATE TABLE `gallery` (
 INSERT INTO `gallery` (`id`, `product_id`, `img`) VALUES
 (1, 2, 's-1.jpg'),
 (2, 2, 's-2.jpg'),
-(3, 2, 's-3.jpg');
+(3, 2, 's-3.jpg'),
+(7, 42, 'a1f183f73150c4578f3c7b1d6daf2b4a.jpg'),
+(8, 42, '01abeb4aa7b7262702a56ce1f2ff446a.jpg'),
+(11, 43, 'e1db44a1835f81b5828bd185fb80c4ff.jpg'),
+(12, 43, '8837a39a8136b7b65d96679c6f25ff10.jpg'),
+(13, 43, '4f3762b0c5b8b7930e1b7e051c413015.jpg');
 
 -- --------------------------------------------------------
 
@@ -253,6 +275,31 @@ INSERT INTO `modification` (`id`, `product_id`, `title`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `news`
+--
+
+CREATE TABLE `news` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `text` text,
+  `views` int(11) DEFAULT '0',
+  `date` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `news`
+--
+
+INSERT INTO `news` (`id`, `title`, `text`, `views`, `date`) VALUES
+(1, 'Новость 1', 'Placeholder Attribute does not set the value of a textarea. Rather \"The placeholder attribute represents a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value\" [and it disappears as soon as user clicks into the textarea]. It will never act as \"the default value\" for the control. If you want that, you must put the desired text inside the Here is the actual default value, as per other answers here', 11, '2020-03-18 10:20:01'),
+(2, 'Новость 2', 'Вид уголка различается, но его функции остаются одинаковыми, если щёлкнуть мышью и потянуть за уголок, то можно изменить размеры поля. Чтобы запретить эту возможность, следует для селектора textarea задать свойство resize со значением none (пример 1).', 10, '2020-03-18 11:19:09'),
+(5, 'Заголовок новости', 'Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или \"невозможных\" слов.', 19, '2020-03-18 11:59:00'),
+(6, 'Еще одна новость', 'Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, \"consectetur\", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги \"de Finibus Bonorum et Malorum\" (\"О пределах добра и зла\"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", происходит от одной из строк в разделе 1.10.32', 18, '2020-03-18 12:14:22'),
+(7, 'Lorem Ipsum', 'Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации \"Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст..\" Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам \"lorem ipsum\" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).', 5, '2020-03-18 08:27:46');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `order`
 --
 
@@ -271,7 +318,11 @@ CREATE TABLE `order` (
 --
 
 INSERT INTO `order` (`id`, `user_id`, `status`, `date`, `update_at`, `currency`, `note`) VALUES
-(6, 5, '0', '2020-02-17 11:15:55', NULL, 'USD', 'Покупаю часы');
+(9, 2, '1', '2020-03-04 10:28:27', '2020-03-05 09:57:36', 'USD', ''),
+(13, 5, '1', '2020-03-05 10:10:34', '2020-03-06 12:46:54', 'USD', ''),
+(18, 5, '0', '2020-03-16 10:24:47', NULL, 'USD', '345'),
+(19, 5, '0', '2020-03-16 10:25:37', NULL, 'USD', ''),
+(20, 5, '1', '2020-03-16 10:31:42', '2020-03-16 10:35:53', 'USD', '');
 
 -- --------------------------------------------------------
 
@@ -293,9 +344,22 @@ CREATE TABLE `order_product` (
 --
 
 INSERT INTO `order_product` (`id`, `order_id`, `product_id`, `qty`, `title`, `price`) VALUES
-(11, 6, 2, 3, 'Casio MQ-24-7BUL (Red)', 70),
-(12, 6, 7, 1, 'Q&Q Q956J302Y', 20),
-(13, 6, 3, 1, 'Casio GA-1000-1AER', 400);
+(20, 9, 6, 1, 'Citizen AT0696-59E', 350),
+(21, 9, 8, 1, 'Royal London 41040-01', 90),
+(22, 9, 5, 2, 'Citizen BJ2111-08E', 500),
+(23, 9, 3, 1, 'Casio GA-1000-1AER', 400),
+(28, 13, 7, 1, 'Q&Q Q956J302Y', 20),
+(29, 13, 6, 1, 'Citizen AT0696-59E', 350),
+(30, 13, 8, 1, 'Royal London 41040-01', 90),
+(40, 18, 1, 1, 'Casio MRP-700-1AVEF', 300),
+(41, 18, 6, 1, 'Citizen AT0696-59E', 350),
+(42, 18, 7, 1, 'Q&Q Q956J302Y', 20),
+(43, 19, 1, 1, 'Casio MRP-700-1AVEF', 300),
+(44, 19, 6, 1, 'Citizen AT0696-59E', 350),
+(45, 19, 7, 1, 'Q&Q Q956J302Y', 20),
+(46, 20, 1, 1, 'Casio MRP-700-1AVEF', 300),
+(47, 20, 6, 1, 'Citizen AT0696-59E', 350),
+(48, 20, 7, 1, 'Q&Q Q956J302Y', 20);
 
 -- --------------------------------------------------------
 
@@ -324,9 +388,9 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `category_id`, `brand_id`, `title`, `alias`, `content`, `price`, `old_price`, `status`, `keywords`, `description`, `img`, `hit`) VALUES
-(1, 6, 1, 'Casio MRP-700-1AVEF', 'casio-mrp-700-1avef', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.<br/>\r\n\r\nMauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>', 300, 500, '1', NULL, NULL, 'p-1.png', '1'),
+(1, 6, 1, 'Casio MRP-700-1AVEF', 'casio-mrp-700-1avef', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.<br />\r\nMauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>\r\n', 300, 500, '1', '', '', 'p-1.png', '1'),
 (2, 6, 1, 'Casio MQ-24-7BUL', 'casio-mq-24-7bul', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.</p>\n\n                                            <p>Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>', 70, 80, '1', NULL, NULL, 'p-2.png', '1'),
-(3, 6, 1, 'Casio GA-1000-1AER', 'casio-ga-1000-1aer', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.<br/>\r\n\r\nMauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>', 400, 500, '1', NULL, NULL, 'p-3.png', '1'),
+(3, 6, 1, 'Casio GA-1000-1AER', 'casio-ga-1000-1aer', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.<br />\r\nMauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>\r\n', 400, 500, '1', '', '', 'p-3.png', '1'),
 (4, 6, 2, 'Citizen JP1010-00E', 'citizen-jp1010-00e', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.<br/>\r\n\r\nMauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>', 400, 0, '1', NULL, NULL, 'p-4.png', '1'),
 (5, 7, 2, 'Citizen BJ2111-08E', 'citizen-bj2111-08e', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.<br/>\r\n\r\nMauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>', 500, 750, '1', NULL, NULL, 'p-5.png', '1'),
 (6, 7, 2, 'Citizen AT0696-59E', 'citizen-at0696-59e', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.<br/>\r\n\r\nMauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>', 350, 355, '1', NULL, NULL, 'p-6.png', '1'),
@@ -354,7 +418,14 @@ INSERT INTO `product` (`id`, `category_id`, `brand_id`, `title`, `alias`, `conte
 (30, 7, 2, 'Часы 17', 'chasy-17', NULL, 125, 0, '1', NULL, NULL, 'no_image.jpg', '0'),
 (31, 7, 2, 'Часы 18', 'chasy-18', NULL, 125, 0, '1', NULL, NULL, 'no_image.jpg', '0'),
 (32, 7, 2, 'Часы 19', 'chasy-19', NULL, 125, 0, '1', NULL, NULL, 'no_image.jpg', '0'),
-(33, 7, 2, 'Часы 20', 'chasy-20', NULL, 125, 0, '1', NULL, NULL, 'no_image.jpg', '0');
+(33, 7, 2, 'Часы 20', 'chasy-20', NULL, 125, 0, '1', NULL, NULL, 'no_image.jpg', '0'),
+(37, 24, 0, 'Тестовый товар', 'testovyy-tovar-37', '<p>Testing <strong>CKEditor</strong></p>\r\n', 100, 340, '1', '123', '321', 'no_image.jpg', '0'),
+(39, 24, 0, 'Тестовый товар', 'testovyy-tovar-39', '<p><s>123</s></p>\r\n', 123, 321, '1', '13321', '21123', 'no_image.jpg', '0'),
+(40, 13, 0, 'Товар фильтр', 'tovar-fil-tr', '', 222, 444, '1', '123', '321', 'no_image.jpg', '0'),
+(41, 4, 0, 'Товар фильтр 2', 'tovar-fil-tr-2', '', 111, 0, '1', '123', '321', 'no_image.jpg', '0'),
+(42, 9, 0, 'Товар с картинкой 1', 'tovar-s-kartinkoy-1', '<p>Часы с картинкой тест</p>\r\n', 555, 777, '1', '123', '321', '00dc70dacaa70066e3a9c20cbcac5e3f.png', '0'),
+(43, 9, 0, 'Товар с картинкой 4', 'tovar-s-kartinkoy-4', '<p>Описание часов с картинкой</p>\r\n', 222, 0, '1', '123', '321', '944e00d79518c3a61c8a3f585df71800.png', '0'),
+(44, 14, 0, 'Связанный товар 1', 'svyazannyy-tovar-1', '', 200, 300, '1', '', '', 'no_image.jpg', '0');
 
 -- --------------------------------------------------------
 
@@ -378,7 +449,35 @@ INSERT INTO `related_product` (`product_id`, `related_id`) VALUES
 (2, 10),
 (5, 1),
 (5, 7),
-(5, 8);
+(5, 8),
+(43, 4),
+(44, 3),
+(44, 4),
+(44, 5),
+(44, 6);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `slider`
+--
+
+CREATE TABLE `slider` (
+  `id` int(11) NOT NULL,
+  `text` varchar(255) DEFAULT NULL COMMENT 'Подпись',
+  `href` varchar(255) DEFAULT NULL COMMENT 'Ссылка',
+  `img` text COMMENT 'Изображение'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `slider`
+--
+
+INSERT INTO `slider` (`id`, `text`, `href`, `img`) VALUES
+(1, 'Casio MRP-700-1AVEF', '/product/casio-mrp-700-1avef', 'dd2ca3a88d99acf62ce91f3d48a73333.jpg'),
+(2, 'Casio MQ-24-7BUL', '/product/casio-mq-24-7bul', 'bnr-2.jpg'),
+(23, 'Q&Q Q956J302Y', '/product/q-and-q-q956j302y', 'e071e5af9b13ca7ec3465d17d3f30ff6.jpg'),
+(24, 'Royal London 41040-01', '/product/royal-london-41040-01', '593a94847a4c967d27ffffea4aaf6965.jpg');
 
 -- --------------------------------------------------------
 
@@ -401,11 +500,14 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `login`, `password`, `email`, `name`, `address`, `role`) VALUES
-(1, 'Александр', '$2y$10$1tUyOUvTryJKO4xWtx9BL.wvtLff52GqXHyreXVqk5nzWpinJ0YHG', '123@mail.ru', 'Алекс', 'Москва', 'user'),
-(2, 'Маша', '$2y$10$jktvBM..yHevah3mcTCwWeMXC6/CU.RtGQow2zDXmlJqCjU2PjNkm', '12345@mail.ru', 'Мария', 'Москва', 'user'),
+(1, 'Владимир', '$2y$10$K0pHStTicyswYopGxvR6OOUJfcXIZ5YgkGiC0q3Em1kZRlE./nQbS', '124443@mail.ru', 'Вова', 'Москва', 'user'),
+(2, 'Маша', '$2y$10$jktvBM..yHevah3mcTCwWeMXC6/CU.RtGQow2zDXmlJqCjU2PjNkm', '12345@mail.ru', 'Мария', 'Москва', 'admin'),
 (3, 'Витя', '$2y$10$QgELWtAWylhiMn1UmDv01OgzPpAQgz9QmjzL6MYZVcKPfUif8tSO6', '1253@mail.ru', '432432', '45454', 'user'),
 (4, 'Николай', '$2y$10$dtrdmtBK4wsY/QFOgo52NuLuIeIkMTWnbtkihCzKDmYsrWItJn9jC', '1290@mail.ru', 'Коля', '123', 'user'),
-(5, 'admin', '$2y$10$4LiYfmO4io72zSsmNpmAcuSlxjS8QJFFTSPm8XzI3EHCWHZoLKje2', 'alex@lee-web.ru', 'Александр', 'Россия', 'user');
+(5, 'admin', '$2y$10$4LiYfmO4io72zSsmNpmAcuSlxjS8QJFFTSPm8XzI3EHCWHZoLKje2', 'alex@lee-web.ru', 'Александр', 'Россия', 'admin'),
+(6, 'Виктория', '$2y$10$e0h3jmOtgothbYqUxbai/eK/RkIHvmhtP.q3S/ufPC82IsvfeEpTC', '4590@gmail.com', 'Вика', 'Москва', 'user'),
+(7, 'Паша', '$2y$10$eES0Z66H0rMZSRPoGIvHkOd2abXXlQbrGo1Sh/ccXPuqQmZuU7rCm', '1@1.ru', 'Паша', '123', 'user'),
+(8, 'Григорий', '$2y$10$iF.D2DJepsSL.MJtWYZKqeTsu8A273gMmrXfxj4z5Fxk95Z8UjDiC', 'jswift888@gmail.com', 'Гриша', '12345', 'user');
 
 --
 -- Индексы сохранённых таблиц
@@ -464,6 +566,12 @@ ALTER TABLE `modification`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `order`
 --
 ALTER TABLE `order`
@@ -492,6 +600,12 @@ ALTER TABLE `related_product`
   ADD PRIMARY KEY (`product_id`,`related_id`);
 
 --
+-- Индексы таблицы `slider`
+--
+ALTER TABLE `slider`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `user`
 --
 ALTER TABLE `user`
@@ -507,13 +621,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT для таблицы `attribute_group`
 --
 ALTER TABLE `attribute_group`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `attribute_value`
 --
 ALTER TABLE `attribute_value`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT для таблицы `brand`
@@ -525,19 +639,19 @@ ALTER TABLE `brand`
 -- AUTO_INCREMENT для таблицы `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT для таблицы `currency`
 --
 ALTER TABLE `currency`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблицы `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT для таблицы `modification`
@@ -546,28 +660,40 @@ ALTER TABLE `modification`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT для таблицы `news`
+--
+ALTER TABLE `news`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT для таблицы `order`
 --
 ALTER TABLE `order`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT для таблицы `order_product`
 --
 ALTER TABLE `order_product`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT для таблицы `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+
+--
+-- AUTO_INCREMENT для таблицы `slider`
+--
+ALTER TABLE `slider`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц

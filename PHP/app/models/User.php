@@ -1,6 +1,11 @@
 <?php
 namespace app\models;
 
+use ishop\App;
+use Swift_Mailer;
+use Swift_Message;
+use Swift_SmtpTransport;
+
 class User extends AppModel {
 
     // Получаемые введенные данные из формы регистрации
@@ -75,5 +80,37 @@ class User extends AppModel {
 
     public static function isAdmin(){
         return (isset($_SESSION['user']) && $_SESSION['user']['role'] == 'admin');
+    }
+
+    public static function mailRemember($string, $user_email, $login){
+        $transport = (new Swift_SmtpTransport(App::$app->getProperty('smtp_host'), App::$app->getProperty('smtp_port'), App::$app->getProperty('smtp_protocol')))
+            ->setUsername(App::$app->getProperty('smtp_login'))
+            ->setPassword(App::$app->getProperty('smtp_password'))
+        ;
+        // Create the Mailer using your created Transport
+        $mailer = new Swift_Mailer($transport);
+
+        // Создаем письмо
+        ob_start();
+        require APP . '/views/mail/mail_remember.php';
+        $body = ob_get_clean(); // Вся html-разметка из вида mail_remember.php
+
+        // Письмо клиента
+        $message_client = (new Swift_Message("Ваш пароль на сайте " . App::$app->getProperty('shop_name')))
+            ->setFrom([App::$app->getProperty('smtp_login') => App::$app->getProperty('shop_name')])
+            ->setTo($user_email)
+            ->setBody($body, 'text/html')
+        ;
+
+
+        // Отправка сообщения
+        $result = $mailer->send($message_client);
+
+        // Очистка данных
+        unset($user_email);
+        unset($string);
+        unset($login);
+        $_SESSION['success'] = 'Новый пароль отправлен на Ваш email';
+
     }
 }

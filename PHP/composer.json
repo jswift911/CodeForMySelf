@@ -8,6 +8,8 @@
   "require": {
     "gabordemooij/redbean": "dev-master",
     "vlucas/valitron": "^1.4",
-    "swiftmailer/swiftmailer": "^6.2"
+    "swiftmailer/swiftmailer": "^6.2",
+    "ext-gd": "*",
+    "ext-mbstring": "*"
   }
 }

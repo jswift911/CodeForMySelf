@@ -34,6 +34,7 @@
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                 </div>
                                 <button type="submit" class="btn btn-default">Вход</button>
+                                <a href="<?=PATH;?>/user/remember" class="btn btn-default remember__pass">Забыли пароль?</a>
                             </form>
                         </div>
                     </div>

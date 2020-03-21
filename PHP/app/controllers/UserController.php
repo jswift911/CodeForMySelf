@@ -3,6 +3,10 @@
 namespace app\controllers;
 
 use app\models\User;
+use ishop\App;
+use Swift_Mailer;
+use Swift_Message;
+use Swift_SmtpTransport;
 
 class UserController extends AppController {
 
@@ -45,5 +49,32 @@ class UserController extends AppController {
         redirect();
     }
 
+    public function rememberAction(){
+        if(!empty($_POST)){
+            $user = new User();
+            $data = $_POST;
+            $user->load($data);
+            $string = null;
+            if(!$user->checkUnique()){
+                $symbols_array = ["92", "83", "7", "66", "45", "4", "36", "22", "1", "0",
+                    "k", "l", "m", "n", "o", "p", "q", "1r",
+                    "3s", "a", "b", "c", "d", "5e", "f", "g", "h",
+                    "i", "j6", "t", "u", "v9", "w", "x5", "6y", "z5"];
+                for ($k = 0; $k < 8; $k++) {
+                    shuffle ($symbols_array);
+                    $string = $string.$symbols_array[1];
+                }
+                $user = \R::findOne("user", "email = ?", [$data['email']]);
+                $login = $user->login;
+                User::mailRemember($string, $data['email'], $login);
+                $newPass = password_hash($string, PASSWORD_DEFAULT);
+                \R::exec( "UPDATE user SET password = '{$newPass}' WHERE email = ?", [$data['email']] );
+            } else {
+                $_SESSION['error'] = 'Такой пользователь не существует';
+            }
+            redirect(PATH . '/user/login');
+        }
+        $this->setMeta('Восстановление пароля');
+    }
 
 }

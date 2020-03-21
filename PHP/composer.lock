@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32b608c5ecbcf7c51e5e7676b19e78bb",
+    "content-hash": "85c2baa4f7edf64f1875779bc9b4711c",
     "packages": [
         {
             "name": "doctrine/lexer",
@@ -130,12 +130,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gabordemooij/redbean.git",
-                "reference": "58d366ac135cf14c7b952cda075a7723dfb425a7"
+                "reference": "076d69b892fa23164ccaca6d6b7a3ff0fecd4e8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/58d366ac135cf14c7b952cda075a7723dfb425a7",
-                "reference": "58d366ac135cf14c7b952cda075a7723dfb425a7",
+                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/076d69b892fa23164ccaca6d6b7a3ff0fecd4e8d",
+                "reference": "076d69b892fa23164ccaca6d6b7a3ff0fecd4e8d",
                 "shasum": ""
             },
             "require": {
@@ -163,7 +163,7 @@
             "keywords": [
                 "orm"
             ],
-            "time": "2019-12-26T17:14:58+00:00"
+            "time": "2020-03-17T22:29:00+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -520,6 +520,9 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-gd": "*",
+        "ext-mbstring": "*"
+    },
     "platform-dev": []
 }

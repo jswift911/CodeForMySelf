@@ -27,8 +27,21 @@
     margin: 0;
     position: relative;
 }
-.item-p > span{
+.item-p > span {
     position: absolute;
     right: 0;
     top: 0;
+}
+#reset-filter {
+    background-color: #dd4b39;
+    border-color: #d73925;
+    color: #fff;
+}
+
+.overlay {
+    display: none;
+}
+
+textarea {
+    resize: none;
 }

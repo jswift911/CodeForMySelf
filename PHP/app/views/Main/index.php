@@ -2,15 +2,16 @@
 <div class="bnr" id="home">
     <div  id="top" class="callbacks_container">
         <ul class="rslides" id="slider4">
+            <?php if ($slider): ;?>
+                <?php foreach ($slider as $item):;?>
             <li>
-                <img src="images/bnr-1.jpg" alt=""/>
+                <a href="<?=$item->href ? PATH . $item->href : '#';?>"><img src="images/<?= $item->img ;?>" alt="<?= $item->id ;?>"/></a>
+                <?php if ($item->text): ;?>
+                    <p><?= $item->text ;?></p>
+                <?php endif;?>
             </li>
-            <li>
-                <img src="images/bnr-2.jpg" alt=""/>
-            </li>
-            <li>
-                <img src="images/bnr-3.jpg" alt=""/>
-            </li>
+                <?php endforeach;?>
+            <?php endif;?>
         </ul>
     </div>
     <div class="clearfix"> </div>
@@ -75,5 +76,26 @@
         </div>
     </div>
 </div>
-<?endif;?>
+<?php endif;?>
 <!--product-end-->
+<!--news-start-->
+<?php if($news) :;?>
+<div class="news">
+    <div class="news__block col-md-10">
+        <?php foreach ($news as $new):;?>
+        <div class="news__element card col-md-4">
+            <!--            <img src="..." class="card-img-top" alt="...">-->
+            <div class="card-body">
+                <h3 class="card-title"><?= $new->title ?></h3>
+                <p class="card-text text-justify"><?= mb_strimwidth($new->text, 0 ,250, ' ...') ;?></p>
+                <?php $date = new DateTime($new->date);?>
+                <p><b>Дата создания:  </b><i><?=$date->format('d F Y H:i:s');?></i></p>
+                <p class="text-justify"><b>Количество просмотров: </b><?=$new->views;?></p>
+                <a href="news/<?=$new->id;?>" class="btn btn-primary">Читать...</a>
+            </div>
+        </div>
+        <?php endforeach;?>
+    </div>
+</div>
+<?php endif;?>
+<!--news-end-->

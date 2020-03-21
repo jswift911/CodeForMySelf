@@ -45,6 +45,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <?php endif; ?>
                         </ul>
                     </div>
+                    <div class="box">
+                        <a class="dropdown" href="<?=PATH;?>/news">News</a>
+                    </div>
                     <div class="clearfix"></div>
                 </div>
             </div>
