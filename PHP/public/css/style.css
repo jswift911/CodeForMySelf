@@ -3229,3 +3229,54 @@ form .has-error .form-control{
 	margin:-100px 0 0 -100px;
 }
 
+.news {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 0 6em 0;
+}
+
+.news__block {
+	border: 1px solid #ECEAEA;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.news__element .card-text {
+	word-wrap: break-word;
+}
+
+.currentNew,
+.allNews {
+	border: 1px solid #ECEAEA;
+}
+
+.currentNew h2 {
+	margin-bottom: 30px;
+}
+
+.allNewsTitle {
+	margin-bottom: 30px;
+	font-style: italic;
+}
+
+.newsOpen {
+	margin-bottom: 30px;
+}
+
+.remember__pass {
+	margin-left: 15px;
+}
+
+#slider4 img {
+	position: relative;
+}
+
+#slider4 p {
+	position: absolute;
+	top: 80%;
+	left: 8%;
+	color: white;
+	font-size: 4vw;
+}

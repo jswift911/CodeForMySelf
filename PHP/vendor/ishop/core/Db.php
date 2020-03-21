@@ -17,6 +17,13 @@ class Db{
         if(DEBUG){
             \R::debug(true, 1); // Режим отладки
         }
+
+        // Функция для того, чтобы таблицы можно было именовать через подчеркивание
+        // В RedBeanPHP через метод ::dispense запрещено использовать подчеркивания в связи с конвенциями.
+        // функция из документации RedBeanPHP
+        \R::ext('xdispense', function($type){
+            return \R::getRedBean()->dispense( $type );
+        });
     }
 
 }

@@ -922,3 +922,1015 @@
          Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
          Строка 46
 ==================================================
+[2020-03-10 15:22:38]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\ProductController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-10 15:22:38]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-10 15:52:47]
+         Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'alias' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-10 15:52:47]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-10 15:54:02]
+         Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'alias' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-11 11:26:21]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-11 15:00:16]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\ProductController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-11 15:00:19]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\ProductController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-11 15:00:21]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\ProductController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-11 15:01:51]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\ProductController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-11 15:04:04]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\ProductController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-11 16:22:50]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-11 16:22:50]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-11 16:22:50]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-11 16:22:50]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-11 16:22:50]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-11 16:22:50]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-11 16:22:50]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-11 16:22:50]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 13:46:49]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:17]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:18]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:22]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:23]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:43:23]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:45:05]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:45:05]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:45:05]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:45:05]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:45:05]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:45:05]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:45:08]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:45:13]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:46:59]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\ProductController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-12 14:46:59]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:47:06]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\ProductController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-12 14:47:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:47:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:47:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:47:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:47:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:47:16]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 14:47:18]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 15:09:47]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\admin\AppController.php | 
+         Строка 30
+==================================================
+[2020-03-12 15:09:47]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 15:24:18]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-12 15:37:00]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\ProductController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-12 15:37:00]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-16 13:12:27]
+         Текст ошибки: Failed to authenticate on SMTP server with username "testdebuglee@gmail.com" using 3 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u19sm6191529lfq.23 - gsmtp
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u19sm6191529lfq.23 - gsmtp
+". Authenticator XOAUTH2 returned Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u19sm6191529lfq.23 - gsmtp
+". | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\AuthHandler.php | 
+         Строка 191
+==================================================
+[2020-03-16 13:12:27]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-16 13:15:26]
+         Текст ошибки: Failed to authenticate on SMTP server with username "testdebuglee@gmail.com" using 3 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials s10sm7360142ljp.87 - gsmtp
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials s10sm7360142ljp.87 - gsmtp
+". Authenticator XOAUTH2 returned Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials s10sm7360142ljp.87 - gsmtp
+". | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\AuthHandler.php | 
+         Строка 191
+==================================================
+[2020-03-16 13:18:02]
+         Текст ошибки: Failed to authenticate on SMTP server with username "testdebuglee@gmail.com" using 3 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials r12sm17167487ljd.6 - gsmtp
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials r12sm17167487ljd.6 - gsmtp
+". Authenticator XOAUTH2 returned Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials r12sm17167487ljd.6 - gsmtp
+". | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\AuthHandler.php | 
+         Строка 191
+==================================================
+[2020-03-16 13:23:04]
+         Текст ошибки: Address in mailbox given [36e0c72cf1e1cc] does not comply with RFC 2822, 3.6.2. | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mime\Headers\MailboxHeader.php | 
+         Строка 355
+==================================================
+[2020-03-16 13:24:47]
+         Текст ошибки: Address in mailbox given [36e0c72cf1e1cc] does not comply with RFC 2822, 3.6.2. | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mime\Headers\MailboxHeader.php | 
+         Строка 355
+==================================================
+[2020-03-16 13:25:37]
+         Текст ошибки: Address in mailbox given [36e0c72cf1e1cc] does not comply with RFC 2822, 3.6.2. | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mime\Headers\MailboxHeader.php | 
+         Строка 355
+==================================================
+[2020-03-16 13:37:28]
+         Текст ошибки: Контроллер app\controllers\admin\CurrencyController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-16 13:37:28]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-16 13:53:15]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/admin\Filter/attribute.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
+[2020-03-16 13:53:15]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-16 13:53:28]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\FilterController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-16 13:54:38]
+         Текст ошибки: Контроллер app\controllers\admin\CurrencyController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-16 13:54:42]
+         Текст ошибки: Контроллер app\controllers\admin\CurrencyController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-16 14:26:19]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\FilterController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-16 14:45:11]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-16 14:48:30]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\FilterController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-16 14:48:35]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\FilterController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 12:50:08]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 12:51:18]
+         Текст ошибки: Контроллер app\controllers\admin\NewsController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-18 12:55:55]
+         Текст ошибки: Контроллер app\controllers\admin\NewsController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-18 13:11:33]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 13:11:49]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 13:38:49]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 13:41:54]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 13:47:44]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 13:47:45]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 13:47:46]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 13:47:47]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 14:43:11]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\admin\AppController.php | 
+         Строка 30
+==================================================
+[2020-03-18 14:43:11]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 14:43:28]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\admin\AppController.php | 
+         Строка 30
+==================================================
+[2020-03-18 15:03:30]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\admin\AppController.php | 
+         Строка 30
+==================================================
+[2020-03-18 16:15:39]
+         Текст ошибки: Контроллер app\controllers\NewsController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:15:39]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 16:17:06]
+         Текст ошибки: Контроллер app\controllers\NewsController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:28:26]
+         Текст ошибки: Контроллер app\controllers\NewsController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:32:21]
+         Текст ошибки: Class 'R' not found | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\NewsController.php | 
+         Строка 12
+==================================================
+[2020-03-18 16:32:34]
+         Текст ошибки: Class 'R' not found | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\NewsController.php | 
+         Строка 12
+==================================================
+[2020-03-18 16:33:14]
+         Текст ошибки: Class 'R' not found | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\NewsController.php | 
+         Строка 12
+==================================================
+[2020-03-18 16:33:58]
+         Текст ошибки: Class 'R' not found | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\NewsController.php | 
+         Строка 12
+==================================================
+[2020-03-18 16:35:19]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/News/index.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:35:20]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/News/index.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:37:09]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/News/index.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:37:36]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/News/index.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:37:38]
+         Текст ошибки: На найден вид C:\OSPanel\domains\WFM\PHP/app/views/News/index.php | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\base\View.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:38:44]
+         Текст ошибки: Контроллер app\controllers\NewsController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:38:47]
+         Текст ошибки: Контроллер app\controllers\NewsController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:38:48]
+         Текст ошибки: Контроллер app\controllers\NewsController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-18 16:39:00]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:39:54]
+         Текст ошибки: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\NewsController.php | 
+         Строка 19
+==================================================
+[2020-03-18 16:40:16]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:40:55]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:40:56]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:40:57]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:42:00]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:46:15]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:47:48]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:50:12]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:54:32]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:57:27]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:57:29]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:57:52]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:57:54]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 16:58:24]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 17:03:34]
+         Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alias' in 'where clause' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-18 17:03:58]
+         Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alias' in 'where clause' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-18 17:03:59]
+         Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'alias' in 'where clause' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-18 17:17:03]
+         Текст ошибки: Access to undeclared static property: app\controllers\CategoryController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 17:17:10]
+         Текст ошибки: Access to undeclared static property: app\controllers\CategoryController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 17:17:24]
+         Текст ошибки: Access to undeclared static property: app\controllers\CategoryController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 17:17:31]
+         Текст ошибки: Access to undeclared static property: app\controllers\CategoryController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 17:17:45]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 17:24:03]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 17:29:53]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 17:29:56]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 17:30:00]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 17:30:03]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 17:45:02]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY date ASC  -- keep-cache' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-18 17:46:10]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 17:47:15]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 17:47:39]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-18 17:50:32]
+         Текст ошибки: Access to undeclared static property: app\controllers\ProductController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 18:16:43]
+         Текст ошибки: Access to undeclared static property: app\controllers\NewsController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-18 18:22:07]
+         Текст ошибки: syntax error, unexpected '<' | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\NewsController.php | 
+         Строка 28
+==================================================
+[2020-03-18 18:23:11]
+         Текст ошибки: syntax error, unexpected '<' | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\controllers\NewsController.php | 
+         Строка 28
+==================================================
+[2020-03-18 18:53:22]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id = '1'  -- keep-cache' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-18 19:17:54]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-19 10:54:47]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-19 11:09:20]
+         Текст ошибки: Access to undeclared static property: app\controllers\UserController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-19 11:09:59]
+         Текст ошибки: Access to undeclared static property: app\controllers\UserController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-19 11:10:02]
+         Текст ошибки: Access to undeclared static property: app\controllers\UserController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-19 11:11:44]
+         Текст ошибки: Access to undeclared static property: app\controllers\UserController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-19 11:17:15]
+         Текст ошибки: Контроллер app\controllers\AController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-19 11:25:17]
+         Текст ошибки: Access to undeclared static property: app\controllers\UserController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-19 12:35:40]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-19 12:35:40]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-19 12:56:58]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-19 13:13:11]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} WHERE email = 'alex@lee-web.ru'' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-19 13:13:50]
+         Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$string' in 'field list' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-19 14:52:51]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-19 15:23:15]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE email = 'alex@lee-web.ru' LIMIT 1   -- keep-cache' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-19 15:24:41]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT login WHERE email = 'alex@lee-web.ru' LIMIT 1   -- keep-cache' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-19 15:27:36]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT login WHERE email = 'alex@lee-web.ru'  -- keep-cache' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-19 15:29:45]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT login WHERE email = 'alex@lee-web.ru' LIMIT 1   -- keep-cache' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-19 15:39:39]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM user WHERE email = 'alex@lee-web.ru' LIMIT 1   -- keep-cache' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-19 15:47:55]
+         Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | 
+         Строка 772
+==================================================
+[2020-03-19 16:13:21]
+         Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | 
+         Строка 772
+==================================================
+[2020-03-19 16:13:43]
+         Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ishop.login' doesn't exist | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-19 16:14:28]
+         Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | 
+         Строка 772
+==================================================
+[2020-03-19 16:14:39]
+         Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | 
+         Строка 772
+==================================================
+[2020-03-20 11:09:30]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 11:14:20]
+         Текст ошибки: Контроллер app\controllers\admin\SliderController не найден | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 43
+==================================================
+[2020-03-20 11:40:59]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\SliderController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-20 12:11:41]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\SliderController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-20 12:19:09]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 12:19:09]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 12:19:33]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 12:19:33]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 12:19:34]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 12:19:34]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 12:19:55]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 12:19:55]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 12:29:34]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\SliderController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-20 12:48:51]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\SliderController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-20 12:49:45]
+         Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-20 12:50:46]
+         Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-20 13:32:20]
+         Текст ошибки: Rule 'type' has not been registered with Valitron\Validator::addRule(). | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\vlucas\valitron\src\Valitron\Validator.php | 
+         Строка 1383
+==================================================
+[2020-03-20 13:32:20]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 13:46:52]
+         Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'slider_img' in 'field list' | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-20 14:22:00]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 14:49:19]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-20 14:49:19]
+         Текст ошибки: Страница не найдена | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 46
+==================================================
+[2020-03-20 14:50:04]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-20 14:50:39]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''6d9eecf79ce85d910b914b659e0ab5cd.jpg'' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-20 14:52:42]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''6d9eecf79ce85d910b914b659e0ab5cd.jpg'' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-20 14:53:19]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '6d9eecf79ce85d910b914b659e0ab5cd.jpg' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-20 14:53:34]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'img VALUES '6d9eecf79ce85d910b914b659e0ab5cd.jpg'' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-20 14:54:26]
+         Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''6d9eecf79ce85d910b914b659e0ab5cd.jpg'' at line 1 | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | 
+         Строка 194
+==================================================
+[2020-03-20 15:14:29]
+         Текст ошибки: Access to undeclared static property: app\controllers\admin\SliderController::$action | 
+         Файл C:\OSPanel\domains\WFM\PHP\vendor\ishop\core\Router.php | 
+         Строка 40
+==================================================
+[2020-03-20 20:19:42]
+         Текст ошибки: Call to a member function grep() on null | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\views\layouts\watches.php | 
+         Строка 306
+==================================================
+[2020-03-20 20:20:32]
+         Текст ошибки: Call to a member function grep() on null | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\views\layouts\watches.php | 
+         Строка 306
+==================================================
+[2020-03-20 20:21:45]
+         Текст ошибки: Call to a member function grep() on null | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\views\layouts\watches.php | 
+         Строка 306
+==================================================
+[2020-03-20 20:26:26]
+         Текст ошибки: Call to a member function grep() on null | 
+         Файл C:\OSPanel\domains\WFM\PHP\app\views\layouts\watches.php | 
+         Строка 306
+==================================================
+[2020-03-20 20:29:52] Текст ошибки: Call to a member function grep() on null | Файл: C:\OSPanel\domains\WFM\PHP\app\views\layouts\watches.php | Строка: 306
+=================
+[2020-03-20 20:30:53] Текст ошибки: Call to a member function grep() on null | Файл: C:\OSPanel\domains\WFM\PHP\app\views\layouts\watches.php | Строка: 306
+=================

@@ -34,6 +34,7 @@ class View {
 
     public function render($data) {
         if (is_array($data)) extract($data);
+        $this->prefix = str_replace('\\', '/', $this->prefix); // Чтобы не было проблем с обратным слэшем
         $viewFile = APP . "/views/{$this->prefix}{$this->controller}/{$this->view}.php";
         if(is_file($viewFile)){
             ob_start();

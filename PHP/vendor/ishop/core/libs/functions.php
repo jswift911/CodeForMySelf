@@ -15,7 +15,7 @@ function redirect($http = false) {
     exit;
 }
 
-// Обертка для поиска
+// Обертка для поиска и прочих данных
 function h($str){
     return htmlspecialchars($str, ENT_QUOTES); // ENT_QOUTES - преобразовывает двойные кавычки
 }

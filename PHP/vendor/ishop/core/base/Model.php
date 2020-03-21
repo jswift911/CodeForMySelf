@@ -25,13 +25,18 @@ abstract class Model {
     }
 
     // Сохраняет данные в таблицу БД
-    public function save($table){
-        $tbl = \R::dispense($table); // отправка
+    public function save($table, $valid = true){
+        if($valid){
+            $tbl = \R::dispense($table); // отправка
+        }else{
+            $tbl = \R::xdispense($table); // своя функция для разрешения подчеркиваний в наименовании таблиц
+        }
         foreach($this->attributes as $name => $value){
             $tbl->$name = $value;
         }
         return \R::store($tbl); // возвращает либо 0, либо id сохраненного запроса
     }
+
 
     // Изменяет данные в таблице БД
     public function update($table, $id){

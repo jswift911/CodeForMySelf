@@ -29,7 +29,7 @@ use RedBeanPHP\Util\Feature;
  * RedBean Facade
  *
  * Version Information
- * RedBean Version @version 5.4
+ * RedBean Version @version 5.5
  *
  * This class hides the object landscape of
  * RedBeanPHP behind a single letter class providing
@@ -49,7 +49,7 @@ class Facade
 	/**
 	 * RedBeanPHP version constant.
 	 */
-	const C_REDBEANPHP_VERSION = '5.4';
+	const C_REDBEANPHP_VERSION = '5.5';
 
 	/**
 	 * @var ToolBox
@@ -1932,8 +1932,29 @@ class Facade
 	 */
 	public static function nuke()
 	{
-		if ( !self::$redbean->isFrozen() ) {
-			self::$writer->wipeAll();
+		return self::wipeAll( TRUE );
+	}
+
+	/**
+	 * Truncates or drops all database tables/views.
+	 * Empties the database. If the deleteTables flag is set to TRUE
+	 * this function will also remove the database structures.
+	 * The latter only works in fluid mode.
+	 *
+	 * @param boolean $alsoDeleteTables TRUE to clear entire database.
+	 *
+	 * @return void
+	 */
+	public static function wipeAll( $alsoDeleteTables = FALSE )
+	{
+		if ( $alsoDeleteTables ) {
+			if ( !self::$redbean->isFrozen() ) {
+				self::$writer->wipeAll();
+			}
+		} else {
+			foreach ( self::$writer->getTables() as $table ) {
+				self::wipe( $table );
+			}
 		}
 	}
 
@@ -2429,18 +2450,19 @@ class Facade
 	 * @param string $mode     mode for function: i.e. read or write
 	 * @param string $field    field (table.column) to bind function to
 	 * @param string $function SQL function to bind to specified column
+	 * @param boolean $isTemplate TRUE if $function is an SQL string, FALSE for just a function name
 	 *
 	 * @return void
 	 */
-	public static function bindFunc( $mode, $field, $function )
+	public static function bindFunc( $mode, $field, $function, $isTemplate = FALSE )
 	{
-		self::$redbean->bindFunc( $mode, $field, $function );
+		self::$redbean->bindFunc( $mode, $field, $function, $isTemplate );
 	}
 
 	/**
 	 * Sets global aliases.
 	 * Registers a batch of aliases in one go. This works the same as
-	 * fetchAs and setAutoResolve but explicitly. For instance if you register
+	 * fetchAs but explicitly. For instance if you register
 	 * the alias 'cover' for 'page' a property containing a reference to a
 	 * page bean called 'cover' will correctly return the page bean and not
 	 * a (non-existant) cover bean.
@@ -2465,9 +2487,7 @@ class Facade
 	 * cover => page
 	 *
 	 * From that point on, every bean reference to a cover
-	 * will return a 'page' bean. Note that with autoResolve this
-	 * feature along with fetchAs() is no longer very important, although
-	 * relying on explicit aliases can be a bit faster.
+	 * will return a 'page' bean.
 	 *
 	 * @param array $list list of global aliases to use
 	 *
@@ -2685,20 +2705,10 @@ class Facade
 	}
 
 	/**
-	 * Alias for setAutoResolve() method on OODBBean.
-	 * Enables or disables auto-resolving fetch types.
-	 * Auto-resolving aliased parent beans is convenient but can
-	 * be slower and can create infinite recursion if you
-	 * used aliases to break cyclic relations in your domain.
-	 * Returns previous value of the flag.
-	 *
-	 * @param boolean $automatic TRUE to enable automatic resolving aliased parents
-	 *
-	 * @return boolean
+	 * @deprecated
 	 */
 	public static function setAutoResolve( $automatic = TRUE )
 	{
-		return OODBBean::setAutoResolve( (boolean) $automatic );
 	}
 
 	/**
@@ -3105,8 +3115,8 @@ class Facade
 	 */
 	public static function ext( $pluginName, $callable )
 	{
-		if ( !ctype_alnum( $pluginName ) ) {
-			throw new RedException( 'Plugin name may only contain alphanumeric characters.' );
+		if ( !preg_match( '#^[a-zA-Z_][a-zA-Z0-9_]*$#', $pluginName ) ) {
+			throw new RedException( 'Plugin name may only contain alphanumeric characters and underscores and cannot start with a number.' );
 		}
 		self::$plugins[$pluginName] = $callable;
 	}
@@ -3122,10 +3132,10 @@ class Facade
 	 */
 	public static function __callStatic( $pluginName, $params )
 	{
-		if ( !ctype_alnum( $pluginName) ) {
-			throw new RedException( 'Plugin name may only contain alphanumeric characters.' );
-		}
 		if ( !isset( self::$plugins[$pluginName] ) ) {
+			if ( !preg_match( '#^[a-zA-Z_][a-zA-Z0-9_]*$#', $pluginName ) ) {
+				throw new RedException( 'Plugin name may only contain alphanumeric characters and underscores and cannot start with a number.' );
+			}
 			throw new RedException( 'Plugin \''.$pluginName.'\' does not exist, add this plugin using: R::ext(\''.$pluginName.'\')' );
 		}
 		return call_user_func_array( self::$plugins[$pluginName], $params );
