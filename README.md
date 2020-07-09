@@ -1,2 +1,2 @@
 # CodeForMySelf
-<a>WebForMySelf.com</a>
+[WebForMySelf.com](WebForMySelf.com "Перейти на сайт")
