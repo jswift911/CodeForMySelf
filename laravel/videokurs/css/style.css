@@ -218,10 +218,10 @@ header {
 
 .main .main__wrap .main__blocks .main__element .part2 {
     max-width: 100%;
-    margin-left: 128px;
+    margin-left: 102px;
     margin-top: -255px;
     min-width: 330px;
-    width: 76%;
+    width: 80%;
     height: 278px;
     position: absolute;
 }
@@ -523,6 +523,11 @@ header {
     text-align: left;
     text-decoration: none;
     color: #EB4432;
+    border-bottom: 1px solid transparent;
+}
+
+.breadcrumbs__main:hover {
+    border-color: #EB4432;
 }
 
 .content .content__wrap .content__block .breadcrumbs__part {
@@ -553,7 +558,8 @@ header {
 .video__top {
     background-color: #fff;
     border-radius: 8px 8px 0 0;
-    padding: 10px 0
+    padding: 10px 0;
+    border: 1px solid #EB4432;
 }
 
 .video__name, .video__type {
@@ -565,14 +571,16 @@ header {
 }
 
 .video__name {
-    font-weight: 400
+    font-weight: 400;
 }
 
 .video__iframe {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
-    overflow: hidden
+    overflow: hidden;
+    border-right: 1px solid #EB4432;
+    border-left: 1px solid #EB4432;
 }
 
 .video__iframe iframe {
@@ -593,7 +601,8 @@ header {
     justify-content: space-between;
     background-color: #fff;
     border-radius: 0 0 8px 8px;
-    padding: 20px
+    padding: 20px;
+    border: 1px solid #EB4432;
 }
 
 .video__prev {
